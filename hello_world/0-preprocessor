@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E -o NAME $NAMEFILE
+gcc -E "$CFILE"
