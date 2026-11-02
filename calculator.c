@@ -7,23 +7,18 @@
  */
 int main(void)
 {
-	int choice = -1;
+	int choice;
 
-	while (choice != 0)
-	{
-		printf("Simple Calculator\n");
-		printf("1) Add\n");
-		printf("2) Subtract\n");
-		printf("3) Multiply\n");
-		printf("4) Divide\n");
-		printf("0) Quit\n");
-		printf("Choice: ");
+	printf("Simple Calculator\n");
+	printf("1) Add\n");
+	printf("2) Subtract\n");
+	printf("3) Multiply\n");
+	printf("4) Divide\n");
+	printf("0) Quit\n");
+	printf("Choice: ");
+	scanf("%d", &choice);
 
-		if (scanf("%d", &choice) != 1)
-			break;
-
-		if (choice == 0)
-			printf("Bye!\n");
-	}
+	if (choice == 0)
+		printf("Bye!\n");
 	return (0);
 }
