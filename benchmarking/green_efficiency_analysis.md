@@ -1,4 +1,5 @@
-#Measurement Methodology
+# Measurement Methodology
+
 All execution times are measured using the <clock()> function from the <time.h> library. It returns the CPU time consumed, which is then converted to seconds using <CLOCKS_PER_SEC.>
 
 The files baseline_loop.c (100,000,000 iterations) and comparison_algorithms.c (50,000 elements) were each run three times, with no changes to the source code.
@@ -7,7 +8,8 @@ In instrumentation_lab.c, each phase is wrapped by a start time reading (start) 
 
 Finally, the printf calls are made only after all measurements have been taken, so that the time spent on output is not included in the results.
 
-#Observed Performance Differences
+# Observed Performance Differences
+
 **Baseline Execution Measurement**
 
 The program was executed three consecutive times. it gave 0.226550 seconds as the first result, 0.236100 seconds as the second result then 0.227494 seconds. the average time is 0.230048 s and the spread
